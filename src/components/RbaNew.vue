@@ -9,7 +9,13 @@
         <span>{{ post.description }}</span>
       </p>
     </div>
-    <a href="/">click here to go back to index</a>
+    <router-link		 
+    to="/"
+    v-slot="{ href, route, navigate, isActive, isExactActive }">
+    <NavLink :active="isActive" :href="href" @click="navigate">Back 2 Index</NavLink>
+    </router-link>
+
+    <!--<a href="/">click here to go back to index</a>-->
   </div>
 </template>
 

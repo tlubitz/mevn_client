@@ -2,8 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>I feel I have full control</h2>
-    <a href="rba_new">go here</a>
-  </div>
+    <!--<a href="rba_new">go shere</a><br><br>-->
+    <router-link		 
+    to="/rba_new"
+    v-slot="{ href, route, navigate, isActive, isExactActive }">
+    <NavLink :active="isActive" :href="href" @click="navigate">Go here to have control to the fullest</NavLink>
+    </router-link>
+    </div>
 </template>
 
 <script>
