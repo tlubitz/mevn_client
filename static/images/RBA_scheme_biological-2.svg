@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:export-filename="/home/wolfram/projekte/rba/rba2html/svg-graphics/RBA_scheme_biological_3.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)" sodipodi:docname="RBA_scheme_biological_3.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1200 498"
+	 style="enable-background:new 0 0 1200 498;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:9.4485;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#EEEEEE;}
+	.st2{fill:none;stroke:#000000;stroke-width:4.7242;stroke-miterlimit:10;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#BBBBBB;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st5{clip-path:url(#SVGID_2_);}
+	.st6{clip-path:url(#SVGID_4_);}
+	.st7{clip-path:url(#SVGID_6_);}
+	.st8{fill:none;stroke:#000000;stroke-width:18.897;stroke-miterlimit:10;}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;}
+	.st10{clip-path:url(#SVGID_8_);}
+	.st11{clip-path:url(#SVGID_10_);}
+	.st12{clip-path:url(#SVGID_12_);}
+	.st13{clip-path:url(#SVGID_14_);}
+	.st14{clip-path:url(#SVGID_16_);}
+	.st15{fill:#FF0000;}
+	.st16{font-family:'Helvetica';}
+	.st17{font-size:15.9995px;}
+	.st18{fill:#BBBBBB;}
+	.st19{font-size:21.3327px;}
+	.st20{fill:none;stroke:#FF0000;stroke-width:18.897;stroke-miterlimit:10;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview4" inkscape:current-layer="g10" inkscape:cx="218.67699" inkscape:cy="535.17527" inkscape:pageopacity="1" inkscape:pageshadow="2" inkscape:window-height="1382" inkscape:window-maximized="1" inkscape:window-width="2560" inkscape:window-x="0" inkscape:window-y="34" inkscape:zoom="1.3078651" objecttolerance="10" pagecolor="#ffffff" showgrid="false" showguides="false">
+	</sodipodi:namedview>
+<g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,1000)" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX">
+	<g id="g4822" transform="translate(26.10263,-1.8903007)" inkscape:label="ink_ext_XXXXXX">
+		<g id="g4824" transform="scale(0.1)">
+			<path id="path4826" inkscape:connector-curvature="0" class="st0" d="M1989.2,7307.3L1989.2,7307.3
+				c-782.7,0-1417.3-634.5-1417.3-1417.3v-141.7c0-782.7,634.5-1417.3,1417.3-1417.3h5215.6c782.7,0,1417.3,634.5,1417.3,1417.3
+				V5890c0,782.7-634.5,1417.3-1417.3,1417.3H1989.2z"/>
+			<path id="path4828" inkscape:connector-curvature="0" class="st1" d="M1148.3,6768.7L1148.3,6768.7c-36.5,0-66.1-29.6-66.1-66.1
+				V5105.8c0-36.5,29.6-66.1,66.1-66.1h2560.5c36.5,0,66.1,29.6,66.1,66.1v1596.8c0,36.5-29.6,66.1-66.1,66.1"/>
+			<path id="path4830" inkscape:connector-curvature="0" class="st2" d="M1148.3,6768.7L1148.3,6768.7c-36.5,0-66.1-29.6-66.1-66.1
+				V5105.8c0-36.5,29.6-66.1,66.1-66.1h2560.5c36.5,0,66.1,29.6,66.1,66.1v1596.8c0,36.5-29.6,66.1-66.1,66.1H1148.3z"/>
+			<path id="path4832" inkscape:connector-curvature="0" class="st1" d="M4691.5,6712L4691.5,6712c-36.5,0-66.1-29.6-66.1-66.1
+				V5105.8c0-36.5,29.6-66.1,66.1-66.1h2078.7c36.5,0,66.1,29.6,66.1,66.1v1540.1c0,36.5-29.6,66.1-66.1,66.1"/>
+			<path id="path4834" inkscape:connector-curvature="0" class="st2" d="M4691.5,6712L4691.5,6712c-36.5,0-66.1-29.6-66.1-66.1
+				V5105.8c0-36.5,29.6-66.1,66.1-66.1h2078.7c36.5,0,66.1,29.6,66.1,66.1v1540.1c0,36.5-29.6,66.1-66.1,66.1H4691.5z"/>
+			<path id="path4836" inkscape:connector-curvature="0" class="st1" d="M7299.2,6456.9L7299.2,6456.9c-36.5,0-66.1-29.6-66.1-66.1
+				v-944.9c0-36.5,29.6-66.1,66.1-66.1h434.6c36.5,0,66.1,29.6,66.1,66.1v944.9c0,36.5-29.6,66.1-66.1,66.1"/>
+			<path id="path4838" inkscape:connector-curvature="0" class="st2" d="M7299.2,6456.9L7299.2,6456.9c-36.5,0-66.1-29.6-66.1-66.1
+				v-944.9c0-36.5,29.6-66.1,66.1-66.1h434.6c36.5,0,66.1,29.6,66.1,66.1v944.9c0,36.5-29.6,66.1-66.1,66.1H7299.2z"/>
+			<path id="path4840" inkscape:connector-curvature="0" class="st3" d="M288.5,6031.7c0-78.3-63.5-141.7-141.7-141.7
+				C68.5,5890,5,5953.5,5,6031.7c0,78.3,63.5,141.7,141.7,141.7C225,6173.5,288.5,6110,288.5,6031.7"/>
+			<path id="path4842" inkscape:connector-curvature="0" class="st2" d="M288.5,6031.7c0-78.3-63.5-141.7-141.7-141.7
+				C68.5,5890,5,5953.5,5,6031.7c0,78.3,63.5,141.7,141.7,141.7C225,6173.5,288.5,6110,288.5,6031.7z"/>
+			<path id="path4844" inkscape:connector-curvature="0" class="st3" d="M1705.7,6031.7c0-78.3-63.4-141.7-141.7-141.7
+				c-78.3,0-141.7,63.4-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C1642.3,6173.5,1705.7,6110,1705.7,6031.7"/>
+			<path id="path4846" inkscape:connector-curvature="0" class="st2" d="M1705.7,6031.7c0-78.3-63.4-141.7-141.7-141.7
+				c-78.3,0-141.7,63.4-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C1642.3,6173.5,1705.7,6110,1705.7,6031.7z"/>
+			<path id="path4848" inkscape:connector-curvature="0" class="st3" d="M3349.8,6062.6c0-78.3-63.4-141.7-141.7-141.7
+				c-78.3,0-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C3286.3,6204.3,3349.8,6140.9,3349.8,6062.6"/>
+			<path id="path4850" inkscape:connector-curvature="0" class="st2" d="M3349.8,6062.6c0-78.3-63.4-141.7-141.7-141.7
+				c-78.3,0-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C3286.3,6204.3,3349.8,6140.9,3349.8,6062.6z"/>
+			<path id="path4852" inkscape:connector-curvature="0" class="st3" d="M4313.5,6060.1c0-78.3-63.5-141.7-141.7-141.7
+				s-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7S4313.5,6138.3,4313.5,6060.1"/>
+			<path id="path4854" inkscape:connector-curvature="0" class="st2" d="M4313.5,6060.1c0-78.3-63.5-141.7-141.7-141.7
+				s-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7S4313.5,6138.3,4313.5,6060.1z"/>
+			<path id="path4856" inkscape:connector-curvature="0" class="st3" d="M5451.1,6078.3c0-78.3-63.5-141.7-141.7-141.7
+				c-78.3,0-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C5387.7,6220.1,5451.1,6156.6,5451.1,6078.3"/>
+			<path id="path4858" inkscape:connector-curvature="0" class="st2" d="M5451.1,6078.3c0-78.3-63.5-141.7-141.7-141.7
+				c-78.3,0-141.7,63.5-141.7,141.7c0,78.3,63.5,141.7,141.7,141.7C5387.7,6220.1,5451.1,6156.6,5451.1,6078.3z"/>
+			<path id="path4860" inkscape:connector-curvature="0" class="st0" d="M6184.3,4812.9h-396.8v425.2"/>
+			<path id="path4862" inkscape:connector-curvature="0" class="st4" d="M6066.5,4812.9l113.4-56.7v113.4L6066.5,4812.9"/>
+			<path id="path4864" inkscape:connector-curvature="0" class="st0" d="M6066.5,4812.9l113.4-56.7v113.4L6066.5,4812.9z"/>
+			<path id="path4866" inkscape:connector-curvature="0" class="st0" d="M7374.8,5379.8v-651.9h-453.5"/>
+			<path id="path4868" inkscape:connector-curvature="0" class="st4" d="M7039.7,4727.8l-113.4,56.7v-113.4L7039.7,4727.8"/>
+			<path id="path4870" inkscape:connector-curvature="0" class="st0" d="M7039.7,4727.8l-113.4,56.7v-113.4L7039.7,4727.8z"/>
+			<path id="path4872" inkscape:connector-curvature="0" class="st0" d="M6184.3,4699.5H2612.8v538.6"/>
+			<path id="path4874" inkscape:connector-curvature="0" class="st4" d="M6066.5,4699.5l113.4-56.7v113.4L6066.5,4699.5"/>
+			<path id="path4876" inkscape:connector-curvature="0" class="st0" d="M6066.5,4699.5l113.4-56.7v113.4L6066.5,4699.5z"/>
+			<g id="g4878">
+				<g>
+					<defs>
+						<path id="SVGID_1_" d="M0,7325V3885h8640v3440H0z M2645.5,5942.3v61.1h-122.8v-61.1l0,0H2645.5z"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4880" class="st5">
+						<path id="path4886" inkscape:connector-curvature="0" class="st0" d="M2584.4,5606.5v396.8"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4888" inkscape:connector-curvature="0" class="st4" d="M2641.1,5942.3l-0.6,8.8l-2.5,9.4l-3.1,8.2l-5,7.6l-6.3,6.9
+				l-6.9,5.7l-7.6,4.4l-8.8,3.1l-8.8,1.9l-9.4,0.6l-8.8-1.3l-8.8-2.5l-8.2-3.8l-7.6-5l-6.3-6.3l-5.7-7.6l-4.4-8.2l-2.5-8.2l-1.9-9.4
+				v-8.8l1.9-9.4l2.5-8.2l4.4-8.2l5.7-7.6l6.3-6.3l7.6-5l8.2-3.8l8.8-2.5l8.8-1.3l9.4,0.6l8.8,1.9l8.8,3.1l7.6,4.4l6.9,5.7l6.3,6.9
+				l5,7.5l3.1,8.2l2.5,9.5L2641.1,5942.3"/>
+			<path id="path4890" inkscape:connector-curvature="0" class="st0" d="M2641.1,5942.3l-0.6,8.8l-2.5,9.4l-3.1,8.2l-5,7.6l-6.3,6.9
+				l-6.9,5.7l-7.6,4.4l-8.8,3.1l-8.8,1.9l-9.4,0.6l-8.8-1.3l-8.8-2.5l-8.2-3.8l-7.6-5l-6.3-6.3l-5.7-7.6l-4.4-8.2l-2.5-8.2l-1.9-9.4
+				v-8.8l1.9-9.4l2.5-8.2l4.4-8.2l5.7-7.6l6.3-6.3l7.6-5l8.2-3.8l8.8-2.5l8.8-1.3l9.4,0.6l8.8,1.9l8.8,3.1l7.6,4.4l6.9,5.7l6.3,6.9
+				l5,7.5l3.1,8.2l2.5,9.5L2641.1,5942.3z"/>
+			<g id="g4892">
+				<g>
+					<defs>
+						<path id="SVGID_3_" d="M0,7325V3885h8640v3440H0z M5848.6,5970.6v61.1h-122.8v-61.1l0,0H5848.6z"/>
+					</defs>
+					<clipPath id="SVGID_4_">
+						<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4894" class="st6">
+						<path id="path4900" inkscape:connector-curvature="0" class="st0" d="M5787.5,5634.9v396.8"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4902" inkscape:connector-curvature="0" class="st4" d="M5844.2,5970.6l-0.6,8.8l-2.5,9.4l-3.1,8.2l-5,7.6l-6.3,6.9
+				l-6.9,5.7l-7.6,4.4l-8.8,3.1l-8.8,1.9l-9.5,0.6l-8.8-1.3l-8.8-2.5l-8.2-3.8l-7.6-5l-6.3-6.3l-5.7-7.6l-4.4-8.2l-2.5-8.2l-1.9-9.4
+				v-8.8l1.9-9.4l2.5-8.2l4.4-8.2l5.7-7.6l6.3-6.3l7.6-5l8.2-3.8l8.8-2.5l8.8-1.3l9.5,0.6l8.8,1.9l8.8,3.1l7.6,4.4l6.9,5.7l6.3,6.9
+				l5,7.6l3.1,8.2l2.5,9.4L5844.2,5970.6"/>
+			<path id="path4904" inkscape:connector-curvature="0" class="st0" d="M5844.2,5970.6l-0.6,8.8l-2.5,9.4l-3.1,8.2l-5,7.6l-6.3,6.9
+				l-6.9,5.7l-7.6,4.4l-8.8,3.1l-8.8,1.9l-9.5,0.6l-8.8-1.3l-8.8-2.5l-8.2-3.8l-7.6-5l-6.3-6.3l-5.7-7.6l-4.4-8.2l-2.5-8.2l-1.9-9.4
+				v-8.8l1.9-9.4l2.5-8.2l4.4-8.2l5.7-7.6l6.3-6.3l7.6-5l8.2-3.8l8.8-2.5l8.8-1.3l9.5,0.6l8.8,1.9l8.8,3.1l7.6,4.4l6.9,5.7l6.3,6.9
+				l5,7.6l3.1,8.2l2.5,9.4L5844.2,5970.6z"/>
+			<path id="path4906" inkscape:connector-curvature="0" class="st3" d="M2386,5436.5l170.1,170.1l255.1-85l28.4-113.4l-226.8-141.7
+				"/>
+			<path id="path4908" inkscape:connector-curvature="0" class="st2" d="M2386,5436.5l170.1,170.1l255.1-85l28.4-113.4l-226.8-141.7
+				L2386,5436.5z"/>
+			<path id="path4910" inkscape:connector-curvature="0" class="st3" d="M5589.1,5436.5l226.8,170.1l255.1-113.4l-28.4-141.7
+				l-255.1-85"/>
+			<path id="path4912" inkscape:connector-curvature="0" class="st2" d="M5589.1,5436.5l226.8,170.1l255.1-113.4l-28.4-141.7
+				l-255.1-85L5589.1,5436.5z"/>
+			<path id="path4914" inkscape:connector-curvature="0" class="st3" d="M6269.4,4699.5l226.8,170.1l311.8-113.4l56.7-170.1
+				l-340.1-113.4"/>
+			<path id="path4916" inkscape:connector-curvature="0" class="st2" d="M6269.4,4699.5l226.8,170.1l311.8-113.4l56.7-170.1
+				l-340.1-113.4L6269.4,4699.5z"/>
+			<g id="g4918">
+				<g>
+					<defs>
+						<path id="SVGID_5_" d="M0,7325V3885h8640v3440H0z M1277.4,6022.3h154.3v75.6h-154.3l0,0l113.4-37.8L1277.4,6022.3z"/>
+					</defs>
+					<clipPath id="SVGID_6_">
+						<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4920" class="st7">
+						<path id="path4926" inkscape:connector-curvature="0" class="st8" d="M316.8,6060.1h1105.5"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4928" inkscape:connector-curvature="0" class="st9" d="M1277.4,6022.3l113.4,37.8l-113.4,37.8V6022.3"/>
+			<path id="path4930" inkscape:connector-curvature="0" class="st8" d="M1277.4,6022.3l113.4,37.8l-113.4,37.8V6022.3z"/>
+			<g id="g4932">
+				<g>
+					<defs>
+						<path id="SVGID_7_" d="M0,7325V3885h8640v3440H0z M3856.8,6022.3h154.3v75.6h-154.3l0,0l113.4-37.8L3856.8,6022.3z"/>
+					</defs>
+					<clipPath id="SVGID_8_">
+						<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4934" class="st10">
+						<path id="path4940" inkscape:connector-curvature="0" class="st8" d="M3406.5,6060.1h595.3"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4942" inkscape:connector-curvature="0" class="st9" d="M3856.8,6022.3l113.4,37.8l-113.4,37.8V6022.3"/>
+			<path id="path4944" inkscape:connector-curvature="0" class="st8" d="M3856.8,6022.3l113.4,37.8l-113.4,37.8V6022.3z"/>
+			<g id="g4946">
+				<g>
+					<defs>
+						<path id="SVGID_9_" d="M0,7325V3885h8640v3440H0z M5019,6022.3h154.3v75.6H5019l0,0l113.4-37.8L5019,6022.3z"/>
+					</defs>
+					<clipPath id="SVGID_10_">
+						<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4948" class="st11">
+						<path id="path4954" inkscape:connector-curvature="0" class="st8" d="M4370.2,6060.1h793.7"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4956" inkscape:connector-curvature="0" class="st9" d="M5019,6022.3l113.4,37.8l-113.4,37.8V6022.3"/>
+			<path id="path4958" inkscape:connector-curvature="0" class="st8" d="M5019,6022.3l113.4,37.8l-113.4,37.8V6022.3z"/>
+			<g id="g4960">
+				<g>
+					<defs>
+						<path id="SVGID_11_" d="M0,7325V3885h8640v3440H0z M6486.7,5071.1v-154.3h75.6v154.3l0,0l-37.8-113.4L6486.7,5071.1z"/>
+					</defs>
+					<clipPath id="SVGID_12_">
+						<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4962" class="st12">
+						<path id="path4968" inkscape:connector-curvature="0" class="st8" d="M5504,6088.4h765.3l255.1-198.4v-963.8"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4970" inkscape:connector-curvature="0" class="st9" d="M6486.7,5071.1l37.8-113.4l37.8,113.4H6486.7"/>
+			<path id="path4972" inkscape:connector-curvature="0" class="st8" d="M6486.7,5071.1l37.8-113.4l37.8,113.4H6486.7z"/>
+			<g id="g4974">
+				<g>
+					<defs>
+						<path id="SVGID_13_" d="M0,7325V3885h8640v3440H0z M6515,4050.7v-154.3h75.6v154.3l0,0l-37.8-113.4L6515,4050.7z"/>
+					</defs>
+					<clipPath id="SVGID_14_">
+						<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4976" class="st13">
+						<path id="path4982" inkscape:connector-curvature="0" class="st8" d="M6552.8,4387.7v-481.9"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4984" inkscape:connector-curvature="0" class="st9" d="M6515,4050.7l37.8-113.4l37.8,113.4H6515"/>
+			<path id="path4986" inkscape:connector-curvature="0" class="st8" d="M6515,4050.7l37.8-113.4l37.8,113.4H6515z"/>
+			<g id="g4988">
+				<g>
+					<defs>
+						<path id="SVGID_15_" d="M0,7325V3885h8640v3440H0z M2864.8,6022.3h154.3v75.6h-154.3l0,0l113.4-37.8L2864.8,6022.3z"/>
+					</defs>
+					<clipPath id="SVGID_16_">
+						<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+					</clipPath>
+					<g id="g4990" class="st14">
+						<path id="path4996" inkscape:connector-curvature="0" class="st8" d="M1762.4,6060.1h1247.2"/>
+					</g>
+				</g>
+			</g>
+			<path id="path4998" inkscape:connector-curvature="0" class="st9" d="M2864.8,6022.3l113.4,37.8l-113.4,37.8V6022.3"/>
+			<path id="path5000" inkscape:connector-curvature="0" class="st8" d="M2864.8,6022.3l113.4,37.8l-113.4,37.8V6022.3z"/>
+			<g id="g5002" transform="scale(10)">
+				<text transform="matrix(0.75 0 0 -0.75 210.2573 657.0293)" class="st15 st16 st17">E</text>
+				<text transform="matrix(0.75 0 0 -0.75 218.2612 657.0293)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 224.9328 657.0293)" class="st15 st16 st17">z</text>
+				<text transform="matrix(0.75 0 0 -0.75 230.9321 657.0293)" class="st15 st16 st17">y</text>
+				<text transform="matrix(0.75 0 0 -0.75 236.9321 657.0293)" class="st15 st16 st17">m</text>
+				<text transform="matrix(0.75 0 0 -0.75 246.9282 657.0293)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 210.2573 645.6914)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 216.2573 645.6914)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 222.9289 645.6914)" class="st15 st16 st17">p</text>
+				<text transform="matrix(0.75 0 0 -0.75 229.6006 645.6914)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 236.2722 645.6914)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 242.2722 645.6914)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 244.936 645.6914)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 248.2715 645.6914)" class="st15 st16 st17">y</text>
+				<text transform="matrix(0.75 0 0 -0.75 210.2573 634.3528)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 216.2573 634.3528)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 222.9289 634.3528)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 229.6006 634.3528)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 235.6006 634.3528)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 238.936 634.3528)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 242.9321 634.3528)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 249.6037 634.3528)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 252.2676 634.3528)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 258.9399 634.3528)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 292.4592 657.0293)" class="st15 st16 st17">M</text>
+				<text transform="matrix(0.75 0 0 -0.75 302.4546 657.0293)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 309.127 657.0293)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 312.4624 657.0293)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 319.134 657.0293)" class="st15 st16 st17">b</text>
+				<text transform="matrix(0.75 0 0 -0.75 325.8057 657.0293)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 332.478 657.0293)" class="st15 st16 st17">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 335.1418 657.0293)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 337.8057 657.0293)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 341.1418 657.0293)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 292.4592 645.6907)" class="st15 st16 st17">m</text>
+				<text transform="matrix(0.75 0 0 -0.75 302.4546 645.6907)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 309.127 645.6907)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 315.1262 645.6907)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 321.1262 645.6907)" class="st15 st16 st17">−</text>
+				<text transform="matrix(0.75 0 0 -0.75 328.134 645.6907)" class="st15 st16 st17">b</text>
+				<text transform="matrix(0.75 0 0 -0.75 334.8057 645.6907)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 341.4773 645.6907)" class="st15 st16 st17">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 344.1411 645.6907)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 350.8135 645.6907)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 357.4851 645.6907)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 363.4844 645.6907)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 292.4592 634.3521)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 298.4592 634.3521)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 305.1309 634.3521)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 311.8025 634.3521)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 317.8025 634.3521)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 321.1387 634.3521)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 325.134 634.3521)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 331.8057 634.3521)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 334.4702 634.3521)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 341.1418 634.3521)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 547.5692 654.1941)" class="st15 st16 st17">M</text>
+				<text transform="matrix(0.75 0 0 -0.75 557.5645 654.1941)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 564.2369 654.1941)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 570.2369 654.1941)" class="st15 st16 st17">h</text>
+				<text transform="matrix(0.75 0 0 -0.75 576.9085 654.1941)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 579.5723 654.1941)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 586.244 654.1941)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 592.9156 654.1941)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 596.9117 654.1941)" class="st15 st16 st17">y</text>
+				<text transform="matrix(0.75 0 0 -0.75 547.5692 642.8555)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 553.5692 642.8555)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 560.2408 642.8555)" class="st15 st16 st17">p</text>
+				<text transform="matrix(0.75 0 0 -0.75 566.9124 642.8555)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 573.584 642.8555)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 579.584 642.8555)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 582.2479 642.8555)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 585.584 642.8555)" class="st15 st16 st17">y</text>
+				<text transform="matrix(0.75 0 0 -0.75 547.5692 631.5176)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 553.5692 631.5176)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 560.2408 631.5176)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 566.9124 631.5176)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 572.9124 631.5176)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 576.2486 631.5176)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 580.244 631.5176)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 586.9156 631.5176)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 589.5801 631.5176)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 596.2518 631.5176)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 686.462 444.4372)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 692.462 444.4372)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 699.1336 444.4372)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 705.8052 444.4372)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 711.8053 444.4372)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 715.1415 444.4372)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 719.1368 444.4372)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 725.8092 444.4372)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 728.473 444.4372)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 735.1447 444.4372)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 510.7202 444.4372)" class="st15 st16 st17">P</text>
+				<text transform="matrix(0.75 0 0 -0.75 518.7242 444.4372)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 522.7195 444.4372)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 529.3919 444.4372)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 532.7274 444.4372)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 539.399 444.4372)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 542.0635 444.4372)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 548.7352 444.4372)" class="st15 st16 st17"> </text>
+				<text transform="matrix(0.75 0 0 -0.75 552.0706 444.4372)" class="st15 st16 st17">m</text>
+				<text transform="matrix(0.75 0 0 -0.75 562.0667 444.4372)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 568.7383 444.4372)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 574.7383 444.4372)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 580.7376 444.4372)" class="st15 st16 st17">−</text>
+				<text transform="matrix(0.75 0 0 -0.75 587.7454 444.4372)" class="st15 st16 st17">b</text>
+				<text transform="matrix(0.75 0 0 -0.75 594.4171 444.4372)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 601.0894 444.4372)" class="st15 st16 st17">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 603.7532 444.4372)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 610.4249 444.4372)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 617.0965 444.4372)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 623.0965 444.4372)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 797.0094 574.8267)" class="st15 st16 st17">D</text>
+				<text transform="matrix(0.75 0 0 -0.75 805.6732 574.8267)" class="st15 st16 st17">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 812.3448 574.8267)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 819.0165 574.8267)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 825.0165 574.8267)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 827.6803 574.8267)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 831.0157 574.8267)" class="st15 st16 st17">y</text>
+				<text transform="matrix(0.75 0 0 -0.75 788.506 560.6536)" class="st15 st16 st17">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 794.506 560.6536)" class="st15 st16 st17">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 801.1776 560.6536)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 807.8492 560.6536)" class="st15 st16 st17">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 813.8492 560.6536)" class="st15 st16 st17">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 817.1847 560.6536)" class="st15 st16 st17">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 821.1808 560.6536)" class="st15 st16 st17">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 827.8524 560.6536)" class="st15 st16 st17">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 830.5162 560.6536)" class="st15 st16 st17">n</text>
+				<text transform="matrix(0.75 0 0 -0.75 837.1879 560.6536)" class="st15 st16 st17">t</text>
+			</g>
+			<g id="g5030" transform="scale(10)">
+				<text transform="matrix(0.75 0 0 -0.75 204.5883 685.3755)" class="st18 st16 st19">M</text>
+				<text transform="matrix(0.75 0 0 -0.75 217.9155 685.3755)" class="st18 st16 st19">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 226.8115 685.3755)" class="st18 st16 st19">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 231.2595 685.3755)" class="st18 st16 st19">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 240.1548 685.3755)" class="st18 st16 st19">b</text>
+				<text transform="matrix(0.75 0 0 -0.75 249.0508 685.3755)" class="st18 st16 st19">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 257.9467 685.3755)" class="st18 st16 st19">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 261.4983 685.3755)" class="st18 st16 st19">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 265.0505 685.3755)" class="st18 st16 st19">s</text>
+				<text transform="matrix(0.75 0 0 -0.75 273.05 685.3755)" class="st18 st16 st19">m</text>
+				<text transform="matrix(0.75 0 0 -0.75 471.0362 682.5403)" class="st18 st16 st19">M</text>
+				<text transform="matrix(0.75 0 0 -0.75 484.364 682.5403)" class="st18 st16 st19">a</text>
+				<text transform="matrix(0.75 0 0 -0.75 493.2593 682.5403)" class="st18 st16 st19">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 501.2596 682.5403)" class="st18 st16 st19">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 506.5872 682.5403)" class="st18 st16 st19">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 515.4825 682.5403)" class="st18 st16 st19">m</text>
+				<text transform="matrix(0.75 0 0 -0.75 528.8104 682.5403)" class="st18 st16 st19">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 537.7064 682.5403)" class="st18 st16 st19">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 541.2579 682.5403)" class="st18 st16 st19">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 550.1539 682.5403)" class="st18 st16 st19">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 558.1534 682.5403)" class="st18 st16 st19">u</text>
+				<text transform="matrix(0.75 0 0 -0.75 567.0494 682.5403)" class="st18 st16 st19">l</text>
+				<text transform="matrix(0.75 0 0 -0.75 570.6009 682.5403)" class="st18 st16 st19">e</text>
+				<text transform="matrix(0.75 0 0 -0.75 579.4969 682.5403)" class="st18 st16 st19"> </text>
+				<text transform="matrix(0.75 0 0 -0.75 583.9449 682.5403)" class="st18 st16 st19">p</text>
+				<text transform="matrix(0.75 0 0 -0.75 592.8401 682.5403)" class="st18 st16 st19">r</text>
+				<text transform="matrix(0.75 0 0 -0.75 598.1685 682.5403)" class="st18 st16 st19">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 607.0638 682.5403)" class="st18 st16 st19">d</text>
+				<text transform="matrix(0.75 0 0 -0.75 615.9598 682.5403)" class="st18 st16 st19">u</text>
+				<text transform="matrix(0.75 0 0 -0.75 624.855 682.5403)" class="st18 st16 st19">c</text>
+				<text transform="matrix(0.75 0 0 -0.75 632.8553 682.5403)" class="st18 st16 st19">t</text>
+				<text transform="matrix(0.75 0 0 -0.75 637.3033 682.5403)" class="st18 st16 st19">i</text>
+				<text transform="matrix(0.75 0 0 -0.75 640.8548 682.5403)" class="st18 st16 st19">o</text>
+				<text transform="matrix(0.75 0 0 -0.75 649.7508 682.5403)" class="st18 st16 st19">n</text>
+			</g>
+			<path id="path5038" inkscape:connector-curvature="0" class="st20" d="M2471.1,6003.4c-23.6-62.8-83.7-104.4-150.8-104.4
+				c-88.9,0-161.1,72.1-161.1,161.1c0,88.9,72.1,161.1,161.1,161.1c67.1,0,127.1-41.6,150.8-104.4"/>
+			<path id="path5040" inkscape:connector-curvature="0" class="st20" d="M3236.4,5833.3c-17.9-4.4-36.3-6.6-54.7-6.6
+				c-127.5,0-230.8,103.3-230.8,230.8c0,127.5,103.3,230.8,230.8,230.8c8.8,0,17.6-0.5,26.4-1.5"/>
+			<path id="path5042" inkscape:connector-curvature="0" class="st20" d="M5900.9,6003.4c-17.6-80.6-88.9-138-171.3-138
+				c-96.9,0-175.4,78.5-175.4,175.4c0,96.9,78.5,175.4,175.4,175.4c42.1,0,82.8-15.1,114.7-42.7"/>
+			<path id="path5044" inkscape:connector-curvature="0" class="st20" d="M6297.7,4812.9c-16.6-37.1-25.2-77.4-25.2-118.1
+				c0-159.6,129.4-289.1,289.1-289.1s289.1,129.4,289.1,289.1c0,30.5-4.8,60.8-14.3,89.7"/>
+			<path id="path5046" inkscape:connector-curvature="0" class="st20" d="M7204.7,5918.3c112.1-74,243.5-113.4,377.8-113.4
+				c115.7,0,229.5,29.3,330.9,85.1"/>
+		</g>
+	</g>
+</g>
+</svg>
