@@ -2,21 +2,23 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>I feel I have full control</h2>
-    <!--<a href="rba_new">go shere</a><br><br>-->
+
+    <h1>Also: {{ piepe }}</h1>
     <router-link		 
-    to="/rba_new"
-    v-slot="{ href, route, navigate, isActive, isExactActive }">
-    <NavLink :active="isActive" :href="href" @click="navigate">Go here to have control to the fullest</NavLink>
+      to="/rba_new"
+      v-slot="{ href, route, navigate, isActive, isExactActive }">
+      <NavLink :active="isActive" :href="href" @click="navigate">Go here to have control to the fullest</NavLink>
     </router-link>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js HOME App',
+      piepe: 'schmussefunz'
     }
   }
 }
