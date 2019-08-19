@@ -1,6 +1,9 @@
 <template>
   <div>
     <nav>
+      <router-link to="/">
+        <img id="nav-logo" src="/static/images/logo.png"></img>
+      </router-link>
       <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{ routes.text }}</router-link>
     </nav> 
   </div>
@@ -14,31 +17,26 @@ export default {
 	  links: [
 	    {
 	      id: 0,
-	      text: 'HOME',
-	      page:'/'
-	    },
-	    {
-	      id: 1,
 	      text: 'GETTING STARTED',
 	      page:'/getting_started'
 	    },
 	    {
-	      id: 2,
+	      id: 1,
 	      text: 'ONLINE SIMULATOR',
 	      page:'/rba_new'
 	    },
 	    {
-	      id: 3,
+	      id: 2,
 	      text: 'DOCUMENTATION',
 	      page:'/documentation'
 	    },
 	    {
-	      id: 4,
+	      id: 3,
 	      text: 'CONTACT',
 	      page:'/contact'
 	    },
 	    {
-	      id: 5,
+	      id: 4,
 	      text: 'ABOUT',
 	      page:'/about'
 	    }
@@ -51,7 +49,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 50px 300px;
+  text-align:left;
 }
 
 nav > a {
@@ -59,6 +58,10 @@ nav > a {
   color: #2D2D2D;
   font-size: 16px;
   padding: 10px;
+}
+
+#nav-logo {
+  height: 50px;
 }
 
 </style>

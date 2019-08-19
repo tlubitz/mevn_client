@@ -8,26 +8,33 @@
       <h0>{{ msg }}</h0>
 
       <p class="p-custom">
-      Metabolic networks are subject to strict stoichiometric constraints. Metabolomics
-      amplifies changes in the proteome, and represents more closely the phenotype of an
-      organism. Recent advances enable the production (and computer-readable encoding as
-      SBML) of metabolic network models reconstructed from genome sequences, as well as
-      experimental measurements of much of the metabolome. There is increasing convergence
-      between the number of human metabolites estimated via genomics (∼3000) and the number
-      measured experimentally. It is thus both timely, and now possible, to bring these two
-      approaches together as an integrated (if distributed) whole to help understand the
-      genesis of metabolic biomarkers, the progress of disease, and the modes of action,
-      efficacy, off-target effects and toxicity of pharmaceutical drugs.
+        <strong>RBApy</strong> is a Python package that enables creation and simulation of bacterial
+	Resource Balance Analysis (RBA) models (<a href="https://doi.org/10.1016/j.ymben.2015.10.003" target="_blank">Goelzer
+	et al. Metab. Eng. 2015</a>), and can be interfaced to <a href="https://escher.github.io/" target="_blank">Escher maps
+	</a> and <a href="https://www.proteomaps.net/" target="_blank">Proteomaps</a> for visualisation. The inputs needed in
+	order to create an RBA model are an annotated metabolic reconstruction in <a href="http://sbml.org/Main_Page" target="_blank">
+	Systems Biology Markup Language (SBML)</a> format and an <a href="https://www.uniprot.org/help/organism-name" target="_blank">
+	Uniprot organism ID</a>, which is used for automatic download and integration of macromolecular composition
+	data into the model. The RBA model accurately captures the macromolecular composition of the cell, and can
+	be refined indefinitely by adding cellular process definitions (such as translation, transcription, secretion,
+	chaperoning etc.).
       </p>
 
-
       <p class="p-custom">
-      Resource Balance Analysis (RBA) is a computational method for analyses of metabolic
-      models. It is based on resource allocation,
-      which performs accurate quantitative predictions of whole-cell states (i.e. growth rate,
-      metabolic fluxes, abundances of molecular machines including enzymes) across growth conditions.
-      If you want to use this neat tool online, please visit our <router-link to="/rba_new" v-slot="{ href, route, navigate, isActive, isExactActive }">
-      <NavLink :active="isActive" :href="href" @click="navigate">getting started tutorial</NavLink></router-link>.
+        RBA models have already been developed for:
+	<ul>
+	  <li> <i>Bacillus subtilis 168 (wild type)</i> </li>
+	  <li> <i>Escherichia coli K-12 (wild type)</i> </li>
+	  <li> <i>CO2-fixing Escherichia coli K-12 (engineered strain)</i> </li>
+	</ul>
+	You can access these models here: <a href="https://github.com/SysBioInra/Bacterial-RBA-models">link</a>.
+      </p>
+      
+      <p class="p-custom">
+        If you want to use this neat tool online, please visit our <router-link to="/rba_new" v-slot="{ href, route, navigate, isActive, isExactActive }">
+        <NavLink :active="isActive" :href="href" @click="navigate">getting started tutorial</NavLink></router-link> or
+	dive right into the action with the <router-link to="/rba_new" v-slot="{ href, route, navigate, isActive, isExactActive }">
+	<NavLink :active="isActive" :href="href" @click="navigate">online simulator</NavLink></router-link>.
       </p>
     </div>
 
@@ -68,7 +75,7 @@ export default {
 
     .cover-header {
         font-family: 'Lexend Deca', sans-serif;
-	padding: 200px 0 0 300px;
+	padding: 100px 0 0 300px;
 	text-align:left;
 	position:absolute;
 	color: white;
@@ -80,8 +87,12 @@ export default {
 	font-size: 16px;
     }
 
+    .p-custom > a {
+        color: lightblue;
+    }
+
     navLink {
-        text-decoration:underline;
+        color: lightblue;
     }
 
     navLink:hover {
