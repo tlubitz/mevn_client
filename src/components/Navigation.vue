@@ -1,12 +1,7 @@
 <template>
   <div>
     <nav>
-      <router-link to="/">Index</router-link>
-      <router-link to="/getting_started">Getting Started</router-link>
-      <router-link to="/rba_new">Online Simulator</router-link>
-      <router-link to="/documentation">Documentation</router-link>
-      <router-link to="/contact">Contact</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{ routes.text }}</router-link>
     </nav> 
   </div>
 </template>
@@ -15,57 +10,51 @@
 export default {
   name: 'Navigation',
     data() {
-    return {
-      links: [
-        {
-          id: 0,
-          text: 'Index',
-          page:'/'
-        },
-        {
-          id: 1,
-          text: 'Getting Started',
-          page:'/getting_started'
-        },
-        {
-          id: 2,
-          text: 'Online Simulator',
-          page:'/rba_new'
-        },
-        {
-          id: 3,
-          text: 'Documentation',
-          page:'/documentation'
-        },
-        {
-          id: 4,
-          text: 'Contact',
-          page:'/contact'
-        },
-        {
-          id: 5,
-          text: 'About',
-          page:'/about'
-        }
-   ]}
+	return {
+	  links: [
+	    {
+	      id: 0,
+	      text: 'HOME',
+	      page:'/'
+	    },
+	    {
+	      id: 1,
+	      text: 'GETTING STARTED',
+	      page:'/getting_started'
+	    },
+	    {
+	      id: 2,
+	      text: 'ONLINE SIMULATOR',
+	      page:'/rba_new'
+	    },
+	    {
+	      id: 3,
+	      text: 'DOCUMENTATION',
+	      page:'/documentation'
+	    },
+	    {
+	      id: 4,
+	      text: 'CONTACT',
+	      page:'/contact'
+	    },
+	    {
+	      id: 5,
+	      text: 'ABOUT',
+	      page:'/about'
+	    }
+	 ]
+      }
    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+nav > a {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #2D2D2D;
+  font-size: 16px;
+  padding: 10px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
