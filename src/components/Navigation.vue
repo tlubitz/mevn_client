@@ -50,6 +50,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+nav {
+  padding: 50px 0 50px 0;
+}
+
 nav > a {
   font-family: 'Lexend Deca', sans-serif;
   color: #2D2D2D;
