@@ -1,13 +1,14 @@
 <template>
   <div>
     <nav>
-      <router-link to="/">
-        <img id="nav-logo" src="/static/images/logo.png"></img>
-      </router-link>
       <div class="container gray highlightTextIn">
-        <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{ routes.text }}</router-link>
+        <router-link to="/">
+          <img id="nav-logo" src="/static/images/logo.png"></img>
+        </router-link>
+        <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`" :alt="`${routes.text}`">{{ routes.text }}</router-link>
       </div>
-    </nav> 
+    </nav>
+
   </div>
 </template>
 
@@ -34,6 +35,11 @@ export default {
 	    },
 	    {
 	      id: 3,
+	      text: 'DOWNLOADS',
+	      page:'/downloads'
+	    },
+	    {
+	      id: 4,
 	      text: 'CONTACT',
 	      page:'/contact'
 	    }
@@ -43,17 +49,31 @@ export default {
 }
 </script>
 
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+nav {
+  padding: 50px 0 50px 300px;
+  text-align:left;
+  background-color: lightgrey;
+}
 
+nav > div > a {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #2D2D2D;
+  font-size: 16px;
+  padding: 10px;
+  font-weight:600;
+}
 
+#nav-logo {
+  height: 50px;
+  padding-left:0;
+}
 
-    
-div.container
-{
-    margin: 0 auto;
-	padding: 10em 3em;
-	text-align: center;
+div.container {
+    margin-left: 0;
+    padding-left:0;
 }
 
 div.container a
@@ -62,16 +82,11 @@ div.container a
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
+    padding-top: 12px;
     position: relative;
     z-index: 0;
     cursor: pointer;
 }
-
-.gray
-{
-    background: #9e9e9e;
-}
-
 
 div.highlightTextIn a:before
 {
@@ -102,9 +117,8 @@ div.highlightTextIn a
 div.highlightTextIn a:before
 {
     transform: scale(1.2);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 } 
-
-
 
 
 

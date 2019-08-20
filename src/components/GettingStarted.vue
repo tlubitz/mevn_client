@@ -29,6 +29,7 @@ export default {
 <style scoped>
     .background-image {
 	background: url("/static/images/go.png");
+	background-size: cover;
     }
 
 </style>

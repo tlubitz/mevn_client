@@ -57,6 +57,7 @@ export default {
 
     .background-image {
 	background: url("/static/images/RBA_scheme_biological-1.png");
+	background-size: cover;
     }
 
 </style>

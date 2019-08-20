@@ -55,6 +55,7 @@ export default {
 <style scoped>
     .background-image {
 	background: url("/static/images/inra.jpg");
+	background-size: cover;
     }
 
 </style>

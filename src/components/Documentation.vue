@@ -33,6 +33,7 @@ export default {
 <style scoped>
     .background-image {
 	background: url("/static/images/documentation.jpg");
+	background-size: cover;
     }
 
 </style>

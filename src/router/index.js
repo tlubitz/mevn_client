@@ -4,6 +4,7 @@ import Index from '@/components/Index'
 import GettingStarted from '@/components/GettingStarted'
 import RbaNew from '@/components/RbaNew'
 import Documentation from '@/components/Documentation'
+import Downloads from '@/components/Downloads'
 import Contact from '@/components/Contact'
 
 Vue.use(Router)
@@ -30,6 +31,11 @@ export default new Router({
       path: '/documentation',
       name: 'Documentation',
       component: Documentation
+    },
+    {
+      path: '/downloads',
+      name: 'Downloads',
+      component: Downloads
     },
     {
       path: '/contact',
