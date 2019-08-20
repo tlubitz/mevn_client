@@ -54,48 +54,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    h0 {
-      font-size: 80px;
-    }
-       
-    .darken-overlay div {
-	height: 800px;
-	width:100%;
-	background-color: rgba(0, 0, 0, 0.8);
-    }
 
     .background-image {
 	background: url("/static/images/RBA_scheme_biological-1.png");
-	height: 800px;
-	width:100%;
-	position:absolute;
-	z-index:-1;
-	background-size:cover;
     }
 
-    .cover-header {
-        font-family: 'Lexend Deca', sans-serif;
-	padding: 100px 0 0 300px;
-	text-align:left;
-	position:absolute;
-	color: white;
-	max-width: 80%;
-    }
-
-    .p-custom {
-        padding-top:30px;
-	font-size: 16px;
-    }
-
-    .p-custom > a {
-        color: lightblue;
-    }
-
-    navLink {
-        color: lightblue;
-    }
-
-    navLink:hover {
-        background-color: black;
-    }
 </style>

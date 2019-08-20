@@ -1,9 +1,21 @@
 <template>
   <div class="hello">
-    <h1>Documentation</h1>
-    <h2>I feel I have full control</h2>
-
+    <div class="background-image darken-overlay">
+      <div></div>
     </div>
+
+    <div class="cover-header">
+      <h0>{{ msg }}</h0>
+
+      <p class="p-custom">
+        Please visit the <a href="/static/files/api/index.html" target="_blank">RBA API</a>.
+      </p>
+    
+      <p class="p-custom">
+        TODO: Proper documentation, if required.  
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -11,7 +23,7 @@ export default {
   name: 'Documentation',
   data () {
     return {
-      msg: 'Getting Started, Mofo',
+      msg: 'Documentation',
     }
   }
 }
@@ -19,18 +31,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+    .background-image {
+	background: url("/static/images/documentation.jpg");
+    }
+
 </style>

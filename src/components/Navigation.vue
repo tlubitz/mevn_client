@@ -4,7 +4,9 @@
       <router-link to="/">
         <img id="nav-logo" src="/static/images/logo.png"></img>
       </router-link>
-      <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{ routes.text }}</router-link>
+      <div class="container gray highlightTextIn">
+        <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`">{{ routes.text }}</router-link>
+      </div>
     </nav> 
   </div>
 </template>
@@ -34,11 +36,6 @@ export default {
 	      id: 3,
 	      text: 'CONTACT',
 	      page:'/contact'
-	    },
-	    {
-	      id: 4,
-	      text: 'ABOUT',
-	      page:'/about'
 	    }
 	 ]
       }
@@ -48,20 +45,67 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-nav {
-  padding: 50px 0 50px 300px;
-  text-align:left;
+
+
+
+    
+div.container
+{
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
 }
 
-nav > a {
-  font-family: 'Lexend Deca', sans-serif;
-  color: #2D2D2D;
-  font-size: 16px;
-  padding: 10px;
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
 
-#nav-logo {
-  height: 50px;
+.gray
+{
+    background: #9e9e9e;
 }
+
+
+div.highlightTextIn a:before
+{
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 
+
+
+
+
 
 </style>

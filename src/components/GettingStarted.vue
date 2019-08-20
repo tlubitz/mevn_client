@@ -1,15 +1,17 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>I feel I have full control</h2>
-
-    <h1>Also: {{ piepe }}</h1>
-    <router-link		 
-      to="/rba_new"
-      v-slot="{ href, route, navigate, isActive, isExactActive }">
-      <NavLink :active="isActive" :href="href" @click="navigate">Go here to have control to the fullest</NavLink>
-    </router-link>
+    <div class="background-image darken-overlay">
+      <div></div>
     </div>
+
+    <div class="cover-header">
+      <h0>{{ msg }}</h0>
+ 
+      <p class="p-custom">
+        TODO: Pretty tutorial.  
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,27 +19,16 @@ export default {
   name: 'About',
   data () {
     return {
-      msg: 'Getting Started, Mofo',
-      piepe: 'You effing mofo, you'
+      msg: 'Getting Started'
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+    .background-image {
+	background: url("/static/images/go.png");
+    }
+
 </style>

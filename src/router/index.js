@@ -5,7 +5,6 @@ import GettingStarted from '@/components/GettingStarted'
 import RbaNew from '@/components/RbaNew'
 import Documentation from '@/components/Documentation'
 import Contact from '@/components/Contact'
-import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -31,11 +30,6 @@ export default new Router({
       path: '/documentation',
       name: 'Documentation',
       component: Documentation
-    },
-    {
-      path: '/about',
-      name: 'About',
-      component: About
     },
     {
       path: '/contact',
