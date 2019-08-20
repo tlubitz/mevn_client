@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.5.3" />
+<title>rbaAPI.NewControler API documentation</title>
+<meta name="description" content="" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.name small{font-weight:normal}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title"><code>rbaAPI.NewControler</code></h1>
+</header>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler"><code class="flex name class">
+<span>class <span class="ident">RBA_newControler</span></span>
+</code></dt>
+<dd>
+<section class="desc"><p>Top level and user interface of the RBA API.</p>
+<p>Connects the four main components:
+'RBA_ModelStructure' (structural model definition),
+'RBA_Problem' (mathematical manifestation of model),
+'Medium' (environmental conditions)
+and RBA_SimulationData as management/export system of results.
+Each of these four components is an attribute of this controler and it
+and its methods can be accessed.</p>
+<p>Contains predefined workflows (e.g findMaxGrowthRate, ParetoFront&hellip;),
+methods to simply define a scenario and simulate (setMu, setMedium doSolve)
+and 'infrastructural' methods to manage data (recordResults, writeResults).</p>
+<p>Via the RBA_Problem object (attribute 'Problem') more custom settings, regarding the
+problem can be made. However this requires some knowledge RBA and linear programming.</p>
+
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><strong><code>xml_dir</code></strong> :&ensp;<code>str</code></dt>
+<dd>Path to directory with rba xml-files</dd>
+<dt><strong><code>model</code></strong> :&ensp;<code>rba.RbaModel</code></dt>
+<dd>parsed xml files</dd>
+<dt><strong><code>matrices</code></strong> :&ensp;<code>rba.ConstraintMatrix</code></dt>
+<dd>constraint matrices from rbapy</dd>
+<dt><strong><code>solver</code></strong> :&ensp;<code>rba.Solver</code></dt>
+<dd>rbapy solver object</dd>
+<dt><strong><code>Problem</code></strong> :&ensp;<code>rbastructure.RBA_Problem</code></dt>
+<dd>RBA-Problem linear programming structure.</dd>
+<dt><strong><code>Medium</code></strong> :&ensp;<code>dict</code></dt>
+<dd>External substrates and their concentrations</dd>
+<dt><strong><code>ModelStructure</code></strong> :&ensp;<code>rbastructure.RBA_ModelStructure</code></dt>
+<dd>Structural information on model</dd>
+<dt><strong><code>Results</code></strong> :&ensp;<code>dict</code></dt>
+<dd>Optimisation output can be recorded with 'recordResults()'</dd>
+<dt><strong><code>Parameters</code></strong> :&ensp;<code>dict</code></dt>
+<dd>LP parameters can be recorded with 'recordParameters()'</dd>
+<dt><strong><code>SimulationData</code></strong> :&ensp;<code>rbastructure.RBA_SimulationData</code></dt>
+<dd>Data structure holding data, generated by simulations.
+Various export functions. Generated with writeResults().</dd>
+<dt><strong><code>SimulationParameters</code></strong> :&ensp;<code>rbastructure.RBA_SimulationParameters</code></dt>
+<dd>Data structure holding parameters, used in simulations.
+Various export functions. Generated with writeResults().</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<p><strong>reloadModel</strong>()
+Reloads model from files</p>
+<p><strong>recordResults</strong>(runName)
+Records Simulation output for further use.</p>
+<p><strong>recordParameters</strong>(runName)
+Records Simulation parameters for further use.</p>
+<p><strong>clearResults</strong>()
+Removes all previosly recorded results.</p>
+<p><strong>clearParameters</strong>()
+Removes all previosly recorded parameters.</p>
+<p><strong>writeResults</strong>(session_name='', digits=10)
+Creates SimulationData and SimulationParameters objects from recordings.</p>
+<p><strong>setMu</strong>(Mu)
+Sets growth-rate to desired value.</p>
+<p><strong>doSolve</strong>(runName='DontSave')
+Solves problem to find solution.</p>
+<p><strong>findMaxGrowthRate</strong>(precision=0.00001, max=4, recording=False)
+Applies dichotomy-search to find the maximal feasible growth-rate.</p>
+<p><strong>findMinMediumConcentration</strong>(metabolite, precision=0.00001, max=100, recording=False)
+Applies dichotomy-search to find the minimal feasible concentration of
+growth-substrate in medium.</p>
+<p><strong>setMedium</strong>(changes)
+Sets the concentration of growth-substrate in medium.</p>
+<p><strong>knockOut</strong>(gene)
+Emulates a gene knock out.</p>
+<p><strong>FeasibleRange</strong>(*variables)
+Determines the feasible range of model variables.</p>
+<p><strong>ConstraintSaturation</strong>(*constraints)
+Determines the saturation of model constraints at current solution.</p>
+<p><strong>ParetoFront</strong>(variables, N)
+Determine Pareto front of two model variables.</p>
+<p><strong>addProtein</strong>(input)
+Adds representation of individual proteins to problem.</p></section>
+<h3>Methods</h3>
+<dl>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.ConstraintSaturation"><code class="name flex">
+<span>def <span class="ident">ConstraintSaturation</span></span>(<span>self, *constraints)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Determines the saturation of model constraints at current solution.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>constraints</code></strong> :&ensp;<code>str</code> or <code>list</code> of <code>str</code></dt>
+<dd>Specifies constraints(s) for which the saturation is to be determined.
+Optional input:
+If not provided all model-constraints are taken</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>Dictionary with constraint-names as keys and other dictionaries as values.
+The 'inner' dictionaries hold keys 'LHS' and 'RHS'
+with values representing values on left and right side of constraint sign (= or &lt;=) respectively.
+E.g. : {'constraintA':{'LHS':1 , 'RHS':100},
+'variableB':{'LHS':42 , 'RHS':42}}</p>
+<p>(Saturation can be calculated by dividing LHS by RHS)</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.FeasibleRange"><code class="name flex">
+<span>def <span class="ident">FeasibleRange</span></span>(<span>self, *variables)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Determines the feasible range of model variables.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>variables</code></strong> :&ensp;<code>str</code> or <code>list</code> of <code>str</code></dt>
+<dd>Specifies variable(s) for which the feasible range is to be determined.
+Optional input:
+If not provided all model-variables are taken</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>Dictionary with variable-names as keys and other dictionaries as values.
+The 'inner' dictionaries hold keys 'Min' and 'Max'
+with values representing lower and upper bound of feasible range respectively.
+E.g. : {'variableA':{'Min':42 , 'Max':9000},
+'variableB':{'Min':-9000 , 'Max':-42}}</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.ParetoFront"><code class="name flex">
+<span>def <span class="ident">ParetoFront</span></span>(<span>self, variables, N)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Determine Pareto front of two model variables.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>variables</code></strong> :&ensp;<code>list</code> of <code>str</code></dt>
+<dd>List holding two variable IDs between which the tradeoffs
+are determined as Pareto front.</dd>
+<dt><strong><code>N</code></strong> :&ensp;<code>int</code></dt>
+<dd>Number of Increments within the feasible range of the first entry to
+argument 'variables'.</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.__init__"><code class="name flex">
+<span>def <span class="ident">__init__</span></span>(<span>self, xml_dir)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Creates controler object from files</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>xml_dir</code></strong> :&ensp;<code>str</code></dt>
+<dd>Path to the directory where rba-model files are located.</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.addProtein"><code class="name flex">
+<span>def <span class="ident">addProtein</span></span>(<span>self, input)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Adds representation of individual proteins to problem.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>input</code></strong> :&ensp;<code>dict</code> or <code>str</code></dt>
+<dd>
+<p>If input is str it has to be the ID of a protein in the model.
+Then this protein is added to the problem an creates:
+One constraint named Protein_'ID' (equality).
+One variable named TotalLevel_'ID' representing the total amount.
+One variable named Free_'ID'_'respectiveCompartment', this
+represents the fraction of the protein not assuming any function.
+It however consumes resources for synthesis (precursors and processes),
+which are the same as defined in the model files.
+And takes up space i the compartment as specified in the model-files
+for the protein.</p>
+<p>If input is dict it has to have two keys; 'ID' and 'UnusedProteinFraction'.
+By specifying this input one can define that the unused franction of the protein
+can also reside in other compartments and which processes it requires.</p>
+<p>The value to 'ID' is the ID of a protein in the model.
+The value to 'UnusedProteinFraction' is another dictionary.
+This can have several keys which must be model-compartments.
+For each of the keys the value is a dict holding IDs of model-processes as Keys
+and process requirements as Values (numerical).
+This specifies which processes each of the compartment-species of the protein
+requires.</p>
+<p>This generates the same constraint and TotalLevel-variable as with the simple input,
+however a variable representing each of the compartment-species for the unused fraction
+is added and incorporates the specific process requirements.</p>
+<p>E.g: input = {'ID': 'proteinA',
+'UnusedProteinFraction':{'Cytoplasm':{'Translation':100}, {'Folding':10}],
+'Membrane':{'Translation':100}, {'Folding':20}, {'Secretion':100}
+}
+}
+This adds 'proteinA' to the model, where the unused fraction can reside either in
+the Cytoplasm or the Membrane. However while the cytosolic-species only requires the
+processes 'Translation' and 'Folding'; the membrane-bound species also requires 'Secretion'
+and occupies more folding capacity.
+Then the constraint 'Protein_proteinA' is added and the 3 variables
+'TotalLevel_proteinA', 'Free_proteinA_Cytoplasm' and 'Free_proteinA_Membrane'.</p>
+</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.clearParameters"><code class="name flex">
+<span>def <span class="ident">clearParameters</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Removes all previosly recorded parameters.</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.clearResults"><code class="name flex">
+<span>def <span class="ident">clearResults</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Removes all previosly recorded results.</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.doSolve"><code class="name flex">
+<span>def <span class="ident">doSolve</span></span>(<span>self, runName=&#39;DontSave&#39;)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Solves problem to find solution.</p>
+<p>Does the same as rbastructure.RBA_Problem.solveLP().
+Just has some automatic option for results-recording.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>runName</code></strong> :&ensp;<code>str</code></dt>
+<dd>Name of observation.
+Serves as ID for all data, originating from this run.
+Special values :
+'DontSave' : Results are not recorded
+'Auto' : Results are automatically recorded
+and appended to existing ones.
+Named with number.
+Any other string: Results are recorded under this name.
+Default: 'DontSave'</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.findMaxGrowthRate"><code class="name flex">
+<span>def <span class="ident">findMaxGrowthRate</span></span>(<span>self, precision=1e-05, max=4, recording=False)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Applies dichotomy-search to find the maximal feasible growth-rate.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>precision</code></strong> :&ensp;<code>float</code></dt>
+<dd>Numberic precision with which maximum is approximated.
+Default : 0.00001</dd>
+<dt><strong><code>max</code></strong> :&ensp;<code>float</code></dt>
+<dd>Defines the highest growth rate to be screened for.
+Default=4</dd>
+<dt><strong><code>recording</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Records intermediate feasible solutions
+while approaching the maximum growth-rate.
+Default : False</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>maximum feasible growth rate as float.</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.findMinMediumConcentration"><code class="name flex">
+<span>def <span class="ident">findMinMediumConcentration</span></span>(<span>self, metabolite, precision=1e-05, max=100, recording=False)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Applies dichotomy-search to find the minimal feasible concentration of
+growth-substrate in medium.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>metabolite</code></strong> :&ensp;<code>str</code></dt>
+<dd>ID of metabolite in medium.</dd>
+<dt><strong><code>precision</code></strong> :&ensp;<code>float</code></dt>
+<dd>Numberic precision with which minimum is approximated.
+Default : 0.00001</dd>
+<dt><strong><code>max</code></strong> :&ensp;<code>float</code></dt>
+<dd>Defines the highest concentration rate to be screened for.
+Default=100</dd>
+<dt><strong><code>recording</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Records intermediate feasible solutions
+while approaching the minimum concentration.
+Default : False</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<p>minimum feasible growth-substrate concentration as float.</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.knockOut"><code class="name flex">
+<span>def <span class="ident">knockOut</span></span>(<span>self, gene)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Emulates a gene knock out.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>gene</code></strong> :&ensp;<code>str</code></dt>
+<dd>ID of model-protein to be knocked out.</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.recordParameters"><code class="name flex">
+<span>def <span class="ident">recordParameters</span></span>(<span>self, runName)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Records Simulation parameters for further use.</p>
+<p>Can be written with 'writeResults' method.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>runName</code></strong> :&ensp;<code>str</code></dt>
+<dd>Name of observation.
+Serves as ID for all Data, originating from these.</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.recordResults"><code class="name flex">
+<span>def <span class="ident">recordResults</span></span>(<span>self, runName)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Records Simulation output for further use.</p>
+<p>Can be written with 'writeResults' method.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>runName</code></strong> :&ensp;<code>str</code></dt>
+<dd>Name of observation.
+Serves as ID for all Data, originating from these.</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.reloadModel"><code class="name flex">
+<span>def <span class="ident">reloadModel</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Reloads model from files</p></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.setMedium"><code class="name flex">
+<span>def <span class="ident">setMedium</span></span>(<span>self, changes)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Sets the concentration of growth-substrate in medium.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>changes</code></strong> :&ensp;<code>dict</code></dt>
+<dd>Keys : ID of metabolite in medium.
+Vaules : New concention</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.setMu"><code class="name flex">
+<span>def <span class="ident">setMu</span></span>(<span>self, Mu)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Sets growth-rate to desired value.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>Mu</code></strong> :&ensp;<code>float</code></dt>
+<dd>Growth rate</dd>
+</dl></section>
+</dd>
+<dt id="rbaAPI__prelim.NewControler.RBA_newControler.writeResults"><code class="name flex">
+<span>def <span class="ident">writeResults</span></span>(<span>self, session_name=&#39;&#39;, digits=10)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Creates SimulationData and SimulationParameters objects from recordings.</p>
+<p>Stores them as rbastructure.RBA_SimulationData
+and rbastructure.RBA_SimulationParameters objects as attributes.
+Access via "NameOfInstance".SimulationData and
+"NameOfInstance".RBA_SimulationParameters respectively.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>digits</code></strong> :&ensp;<code>int</code></dt>
+<dd>Number of decimal places in the results
+Default: 10</dd>
+<dt><strong><code>session_name</code></strong> :&ensp;<code>str</code></dt>
+<dd>Name of Simulation session.
+Default: ''</dd>
+</dl></section>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="rbaAPI__prelim" href="index.html">rbaAPI__prelim</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="rbaAPI__prelim.NewControler.RBA_newControler" href="#rbaAPI__prelim.NewControler.RBA_newControler">RBA_newControler</a></code></h4>
+<ul class="">
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.__init__" href="#rbaAPI__prelim.NewControler.RBA_newControler.__init__">__init__</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.ConstraintSaturation" href="#rbaAPI__prelim.NewControler.RBA_newControler.ConstraintSaturation">ConstraintSaturation</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.FeasibleRange" href="#rbaAPI__prelim.NewControler.RBA_newControler.FeasibleRange">FeasibleRange</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.ParetoFront" href="#rbaAPI__prelim.NewControler.RBA_newControler.ParetoFront">ParetoFront</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.addProtein" href="#rbaAPI__prelim.NewControler.RBA_newControler.addProtein">addProtein</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.clearParameters" href="#rbaAPI__prelim.NewControler.RBA_newControler.clearParameters">clearParameters</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.clearResults" href="#rbaAPI__prelim.NewControler.RBA_newControler.clearResults">clearResults</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.doSolve" href="#rbaAPI__prelim.NewControler.RBA_newControler.doSolve">doSolve</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.findMaxGrowthRate" href="#rbaAPI__prelim.NewControler.RBA_newControler.findMaxGrowthRate">findMaxGrowthRate</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.findMinMediumConcentration" href="#rbaAPI__prelim.NewControler.RBA_newControler.findMinMediumConcentration">findMinMediumConcentration</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.knockOut" href="#rbaAPI__prelim.NewControler.RBA_newControler.knockOut">knockOut</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.recordParameters" href="#rbaAPI__prelim.NewControler.RBA_newControler.recordParameters">recordParameters</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.recordResults" href="#rbaAPI__prelim.NewControler.RBA_newControler.recordResults">recordResults</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.reloadModel" href="#rbaAPI__prelim.NewControler.RBA_newControler.reloadModel">reloadModel</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.setMedium" href="#rbaAPI__prelim.NewControler.RBA_newControler.setMedium">setMedium</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.setMu" href="#rbaAPI__prelim.NewControler.RBA_newControler.setMu">setMu</a></code></li>
+<li><code><a title="rbaAPI__prelim.NewControler.RBA_newControler.writeResults" href="#rbaAPI__prelim.NewControler.RBA_newControler.writeResults">writeResults</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.5.3</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

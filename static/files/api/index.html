@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.5.3" />
+<title>rbastructure API documentation</title>
+<meta name="description" content="" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.name small{font-weight:normal}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title"><code>rbastructure</code> module</h1>
+</header>
+<section id="section-intro">
+</section>
+<section>
+<p>This preliminary documentation does not contain all elements of the module.
+     However the classes, which are considered most relevant for the user are in this documentation.
+     The NewControler-class is the main-interface and is sufficient for generic predefined workflows.
+     Additionally the SimulationData-class is also relevant for the user,
+     since it provides methods to export the simulation output into various formats.
+     The Problem-class might also be of relevance for more experienced users,
+     who have already an idea how RBA Problems work and have basic knowlege about linear-programming.
+     For those users this class provides methods to make customised manipulations.
+</p>
+<p>
+     Below some simple application workflows, using the api are given as examples.
+     The include: Setting the growth-medium composition and determining the cellular composition at the maximal possible growth rate.
+     Determining the maximum growth rate and cellular compositions for knock-out and wild-type strains.
+     Creating a Pareto-front between the total expression levels of two model-proteins.
+     Determining the minimal and maximal possible concentrations of ribosomes at different growth-rates.
+     Finding the minimally required growth-substrate concentration to allow a given growth-rate and showing the saturation of constraints at this solution.
+     Furthermore in some of the workflows it is exemplified how to record the cellular composition and how to export the data with the SimulationData module.
+     Lastly it is shown how to access information on the model's structure via the api.
+</p>
+<p><strong>Setting medium finding max growth rate and exporting results.</strong>
+<pre><code>from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+## Set medium to first condition, simulate and record results.##
+Simulation.setMedium({'M_glc__D': 10})
+Simulation.setMedium({'M_pyr': 0})
+Simulation.findMaxGrowthRate()
+Simulation.recordResults('Glucose')
+
+## Set medium to second condition, simulate and record results.##
+Simulation.setMedium({'M_glc__D': 0})
+Simulation.setMedium({'M_pyr': 10})
+Simulation.findMaxGrowthRate()
+Simulation.recordResults('Pyruvate')
+
+## Write recorded results to RBA_SimulationData object ##
+Simulation.writeResults(session_name='GlcPyrTest')
+
+## Export results in various formats ##
+Simulation.SimulationData.exportCSV()
+Simulation.SimulationData.exportEscherMap(type='investment')
+Simulation.SimulationData.exportEscherMap(type='fluxes')
+Simulation.SimulationData.exportProteoMap()
+</code></pre>
+
+<p><strong>Comparing cellular state at maximum growth in knock-out and wild-type strain.</strong>
+<pre><code>
+from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+
+## Determine maximum growth rate without knock out and record result ##
+Mu_wt=Simulation.findMaxGrowthRate()
+Simulation.recordResults('WildType')
+
+## Knock out gene in model ##
+Simulation.knockOut('GENE-ID')
+## Determine maximum growth rate with knock out and record result ##
+Mu_ko=Simulation.findMaxGrowthRate()
+Simulation.recordResults('GENE-ID_KO')
+
+## Print the growth rates of WT and KO strain ##
+print([Mu_wt,Mu_ko])
+
+## Write recorded results to RBA_SimulationData object ##
+Simulation.writeResults(session_name='KnockOutTest')
+
+## Export results in various formats ##
+Simulation.SimulationData.exportCSV()
+Simulation.SimulationData.exportEscherMap(type='investment')
+Simulation.SimulationData.exportEscherMap(type='fluxes')
+Simulation.SimulationData.exportProteoMap()
+</code></pre>
+
+<p><strong>Determining the pareto-optimal relationship between the total expression of two model-proteins at different growth-rates.</strong>
+<pre><code>
+from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+## Add two proteins to problem ##
+Simulation.addProtein('Protein1')
+Simulation.addProtein('Protein2')
+## Determine maximum growth rate ##
+Mumax=Simulation.findMaxGrowthRate()
+## determine pareto fron between total expression levels of two proteins ##
+## at 90 percent of the maximum growth rate ##
+Simulation.setMu(Mumax*0.9)
+PF=Simulation.ParetoFront(['TotalLevel_Protein1','TotalLevel_Protein2'], 20)
+## Write Paretofront to csv ##
+PF.to_csv('Pareto_Protein1_Protein2_90maxMu.csv')
+## determine pareto fron between total expression levels of two proteins ##
+## at 99 percent of the maximum growth rate ##
+Simulation.setMu(Mumax*0.99)
+PF=Simulation.ParetoFront(['TotalLevel_Protein1','TotalLevel_Protein2'], 20)
+## Write Paretofront to csv ##
+PF.to_csv('Pareto_Protein1_Protein2_99maxMu.csv')
+</code></pre>
+
+<p><strong>Determining the feasible range of ribosome concentration at different growth-rates.</strong>
+<pre><code>
+from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+## Determine maximum growth rate ##
+Mumax=Simulation.findMaxGrowthRate()
+
+## Determin feasible range (variability) of ribosome concentration ##
+## at 90 percent of the maximum growth rate and print range##
+Simulation.setMu(Mumax*0.9)
+FR_90=Simulation.FeasibleRage('RibosomeID')
+print(FR_90)
+
+## Determin feasible range (variability) of ribosome concentration ##
+## at 99 percent of the maximum growth rate and print range ##
+Simulation.setMu(Mumax*0.99)
+FR_99=Simulation.FeasibleRage('RibosomeID')
+print(FR_99)
+</code></pre>
+
+<p><strong>Determine minimum required glucose level in aerobic conditions at 90 percent of maxim growth rate.
+And subsequently determine saturation-level of constraints at solution.
+Furthermore one reaction is constrained to work in forward direction</strong>
+<pre><code>
+from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+
+## Force ReactionXY to carry positive flux ##
+Simulation.Problem.setLB({'ReactionXY':0})
+
+## Determine maximum growth rate ##
+Mumax=Simulation.findMaxGrowthRate()
+
+## Find and print the minimal concentration of glucose in the medium, ##
+## which is required to sustain 90 percent of the maximal growth rate ##
+## in aerobic condiditon.
+Simulation.setMu(Mumax*0.9)
+Simulation.setMedium({'M_o2': 10})
+minGlc=Simulation.findMinMediumConcentration('M_glc__D')
+print(minGlc)
+
+## Determine and print saturation-level for all constraints
+SaturationDict=ConstraintSaturation()
+print({c: SaturationDict[c]['LHS']/SaturationDict[c]['RHS'] for c in list(SaturationDict.keys())})
+</code></pre>
+
+<p><strong>Acces the information on model structure in the ModelStructure</strong>
+<pre><code>
+from rbastructure.NewControler import RBA_newControler
+## Load Model ##
+pathToModel= "&hellip;/&hellip;/&hellip;" #path to directory with model files#
+Simulation = RBA_newControler(pathToModel)</p>
+
+## See information on protein 'Protein23'##
+Simulation.ModelStructure.ProteinInfo.Elements['Protein23']
+
+## See information on reaction 'Reaction111'##
+Simulation.ModelStructure.ReactionInfo.Elements['Reaction111']
+
+## See information on compartment 'Compartment4'##
+Simulation.ModelStructure.CompartmentInfo.Elements['Compartment4']
+
+## See information on metabolite 'Metabolite404'##
+Simulation.ModelStructure.MetaboliteInfo.Elements['Metabolite404']
+</code></pre>
+<section>
+<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+<dl>
+<dt><code class="name"><a title="rbastructure.NewControler" href="NewControler.html">rbastructure.NewControler</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+<dt><code class="name"><a title="rbastructure.rba_Problem" href="rba_Problem.html">rbastructure.rba_Problem</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+<dt><code class="name"><a title="rbastructure.rba_LP" href="rba_LP.html">rbastructure.rba_LP</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+<dt><code class="name"><a title="rbastructure.rba_Matrix" href="rba_Matrix.html">rbastructure.rba_Matrix</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+<dt><code class="name"><a title="rbastructure.rba_SimulationData" href="rba_SimulationData.html">rbastructure.rba_SimulationData</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+<dt><code class="name"><a title="rbastructure.rba_ModelStructure" href="rba_ModelStructure.html">rbastructure.rba_ModelStructure</a></code></dt>
+<dd>
+<section class="desc"></section>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<ul>
+<li><code><a title="rbastructure.NewControler" href="NewControler.html">rbastructure.NewControler</a></code></li>
+<li><code><a title="rbastructure.rba_Problem" href="rba_Problem.html">rbastructure.rba_Problem</a></code></li>
+<li><code><a title="rbastructure.rba_LP" href="rba_LP.html">rbastructure.rba_LP</a></code></li>
+<li><code><a title="rbastructure.rba_Matrix" href="rba_Matrix.html">rbastructure.rba_Matrix</a></code></li>
+<li><code><a title="rbastructure.rba_SimulationData" href="rba_SimulationData.html">rbastructure.rba_SimulationData</a></code></li>
+<li><code><a title="rbastructure.rba_ModelStructure" href="rba_ModelStructure.html">rbastructure.rba_ModelStructure</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.5.3</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
