@@ -12,7 +12,11 @@
       </p>
     
       <p class="p-custom">
-        TODO: Proper documentation, if required.  
+        Here you find access to the <a href="https://github.com/SysBioInra/RBApy" target="_blank">code repository on Github</a>.
+      </p>
+
+      <p class="p-custom">
+        Also, we have a <a href="https://github.com/SysBioInra/Bacterial-RBA-models" target="_blank">collection of compliant models</a>, which you also directly employ for online simulation on our <router-link to="/downloads" v-slot="{ href, route, navigate, isActive, isExactActive }"> <NavLink :active="isActive" :href="href" @click="navigate">Downloads page</NavLink></router-link>.
       </p>
     </div>
   </div>

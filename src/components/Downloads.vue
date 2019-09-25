@@ -7,10 +7,11 @@
     <div class="cover-header">
       <h0>{{ msg }}</h0>
 
-    
       <p class="p-custom">
-        TODO: Make a pretty list of downloads.  
-      </p>
+        The <a href="https://github.com/SysBioInra/Bacterial-RBA-models" target="_blank">models compliant for RBA online simulator</a> can be
+	found in the Github Repository. As soon as I know more about the model structure, (which files are required, are they uploaded as
+	zip?, etc), I can also list them here to make them directly available for online simulation.
+      </p>    
     </div>
   </div>
 </template>
