@@ -66,8 +66,7 @@ export default {
 	this.message = 'Uploaded, man, youre rad!';
       }
       catch(err){
-        console.log(err);
-	this.message = 'This is not implemented... yet! But stay tuned.';
+	this.message = err.response.data.error;
       }
     }
     /*async getPosts () {
