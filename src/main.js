@@ -5,8 +5,8 @@ import App from './App'
 import Nav from './Nav'
 import router from './router'
 import { BButton } from 'bootstrap-vue'
-Vue.component('b-button', BButton)
 
+Vue.component('b-button', BButton)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

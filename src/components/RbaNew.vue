@@ -34,7 +34,7 @@
         </div>
       </p>
 
-      <p class="p-custom">
+      <p class="p-custom" v-if="status === 'uploaded' || status === 'returned'">
         <b-button v-on:click="simulate()" variant="secondary">Click to Simulate!</b-button>
 	<b-button v-on:click="clear()" variant="secondary">Remove model!</b-button>
       </p>
