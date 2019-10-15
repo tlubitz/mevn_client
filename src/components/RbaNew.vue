@@ -13,26 +13,32 @@
 	    <div class="fields">
 	      <button>Submit</button>
 	    </div>
-	    <div class="message">
-	      <p>
-	        {{ message }}
-	      </p>
+	   </form>
+
+	    <div v-if="status === 'uploaded'">
+	    <p class="p-custom">
+		{{ message }}
+	    </p>
 	    </div>
-	  </form>
+	    <div v-else-if="status === 'returned'">
+    	    <p class="p-custom">
+	        The currently loaded model is {{ current_model }}.
+	    </p>
+	    </div>
+	    <div v-else>
+	    <p class="p-custom">
+	        Alternatively, choose a model from the <router-link to="/downloads" v-slot="{ href, route, navigate, isActive, isExactActive }"> <NavLink :active="isActive" :href="href" @click="navigate">Downloads page</NavLink></router-link>.
+	    </p>
+	    </div>
+
         </div>
       </p>
 
       <p class="p-custom">
-        Alternatively, choose a model from the <router-link to="/downloads" v-slot="{ href, route, navigate, isActive, isExactActive }"> <NavLink :active="isActive" :href="href" @click="navigate">Downloads page</NavLink></router-link>.
+        <b-button v-on:click="simulate()" variant="secondary">Click to Simulate!</b-button>
+	<b-button v-on:click="clear()" variant="secondary">Remove model!</b-button>
       </p>
-
-      <!--
-      <div v-for="(post,index) in posts" v-bind:key="index">
-        <p class="p-custom">
-          <span><b>{{ post.title }}</b></span><br />
-          <span>{{ post.description }}</span>
-        </p>
-      </div>-->
+	 
     </div>
   </div>
 </template>
@@ -47,32 +53,65 @@ export default {
     return {
       posts: [],
       file:"",
-      message:""
+      message:"",
+      current_model: '',
+      status: ''
     }
   },
-  /*mounted () {
-    this.getPosts()
-  },*/
+  mounted() {
+    try {
+      this.getFilename();
+      }
+    catch(err) {
+      console.log('ERROR: ',err);
+    }
+  },
   methods: {
     onSelect(){
       const file = this.$refs.file.files[0];
       this.file = file;
+    },
+    async clear() {
+      try {
+         await axios.post('/clear');
+	 this.status = '';
+	 }
+      catch(err) {
+         this.message = err.response.data.error;	 
+	 }
+     },
+    async simulate() {
+      try {
+         await axios.post('/simulate');
+	 this.message = "SIMULATE AWAY!! Just kidding, this is not implemented yet."
+	 }
+      catch(err) {
+         this.message = err.response.data.error;	 
+	 }
     },
     async onSubmit(){
       const formData = new FormData();
       formData.append('file', this.file);
       try {
         await axios.post('/upload',formData);
-	this.message = 'Uploaded, man, youre rad!';
+	this.message = "Uploaded, man, you're rad! Its name is " + this.file.name + " and it is beautiful.";
+	this.status = 'uploaded';
       }
       catch(err){
 	this.message = err.response.data.error;
       }
+    },
+    async getFilename() {
+      try {
+	   axios.get('/getFilename').then(data => {
+	   	this.current_model = data.data;
+		this.status = 'returned';
+	   })
+	   }
+      catch(err) {
+          this.message = err.response.data.error;
+      }
     }
-    /*async getPosts () {
-      const response = await RbaNewService.fetchPosts()
-      this.posts = response.data
-    }*/
   },
 }
 </script>
@@ -96,6 +135,10 @@ export default {
 
     h1 {
        margin-bottom:25px;
+    }
+
+    input[type=button] {
+       color:blue;
     }
     
 </style>

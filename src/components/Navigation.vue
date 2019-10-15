@@ -53,7 +53,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav {
-  padding: 50px 0 50px 300px;
+  padding: 50px 0 50px 20%;
   text-align:left;
   background-color: lightgrey;
 }
