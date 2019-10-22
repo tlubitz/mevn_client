@@ -78,6 +78,11 @@ app.post('/simulate', (req, res) => {
 
 });
 
+app.post('/chooseModel', (req, res) => {
+    localStorage.setItem('rba_file_path', req.body.name)
+    res.send();
+});
+
 
 app.post('/clear', (req, res) => {
     localStorage.clear();

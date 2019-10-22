@@ -21,7 +21,9 @@
 	    Bacillus subtilis RBA model was generated using the RBApy package
 	    (<a href="https://doi.org/10.1016/j.ymben.2019.06.001" target="_blank">Automated generation of bacterial resource allocation models</a>), using manually curated metabolic
 	    reconstruction (<a href="https://doi.org/10.1186/1752-0509-2-20" target="_blank">Reconstruction and analysis of the genetic and metabolic regulatory networks of the central metabolism of Bacillus subtilis</a>) and parameters estimated in <a href="https://doi.org/10.1016/j.ymben.2015.10.003" target="_blank">Quantitative prediction of genome-wide resource allocation in bacteria</a>.<br>
-	    <b-button variant="secondary">Choose for simulation</b-button>
+	    <b-button variant="secondary" v-on:click="chooseModel('bacillus')">
+	    Choose for simulation
+	    </b-button>
 	  </div>
 	</li>
         <li class="list-group-item">
@@ -31,7 +33,7 @@
 	    (<a href="https://doi.org/10.1016/j.ymben.2019.06.001" target="_blank">Automated generation of bacterial resource allocation models</a>) from the iJO1366 metabolic
 	    reconstruction (<a href="https://doi.org/10.1038/msb.2011.65" target="_blank">A comprehensive genome‐scale reconstruction of Escherichia coli metabolism</a>) as described in
 	    <a href="https://doi.org/10.1016/j.ymben.2019.06.001" target="_blank">Automated generation of bacterial resource allocation models</a>.<br>
-	    <b-button variant="secondary">Choose for simulation</b-button>
+	    <b-button variant="secondary" v-on:click="chooseModel('ecoli')">Choose for simulation</b-button>
 	  </div>
 	</li>
         <li class="list-group-item">
@@ -42,7 +44,7 @@
 	    reconstruction (<a href="https://doi.org/10.1038/msb.2011.65" target="_blank">A comprehensive genome‐scale reconstruction of Escherichia coli metabolism</a>) as descibed in
 	    <a href="https://doi.org/10.1016/j.ymben.2019.06.001" target="_blank">Automated generation of bacterial resource allocation models</a>, by introducing modifications to the
 	    wild type as described in <a href="https://doi.org/10.1016/j.cell.2016.05.064" target="_blank">Sugar Synthesis from CO2 in Escherichia coli</a>.<br>
-	    <b-button variant="secondary">Choose for simulation</b-button>
+	    <b-button variant="secondary" v-on:click="chooseModel('ecoli_c02')">Choose for simulation</b-button>
 	  </div>
 	</li>
       </div>
@@ -52,12 +54,28 @@
 </template>
 
 <script>
+import axios from 'axios'
+const querystring = require('querystring');
+
 export default {
   name: 'Downloads',
   data () {
     return {
       msg: 'Downloads',
+      name: '',
     }
+  },
+  methods: {
+    async chooseModel(name) {
+        try {
+      	    this.name = 'uploads/' + name + '.zip';
+      	    axios.post('/chooseModel', querystring.stringify({name: this.name}));
+	    window.location.href = '/#/rba_new';
+	    }
+        catch(err) {
+            this.message = err.response.data.error;	 
+	    }
+        }
   }
 }
 </script>
