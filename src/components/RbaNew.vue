@@ -16,19 +16,28 @@
 	   </form>
 
 	    <div v-if="status === 'uploaded'">
-	    <p class="p-custom">
-		{{ message }}
-	    </p>
+	      <p class="p-custom-inline">
+	    	{{ message }}
+	      </p>
+	      <p class="p-custom-inline">
+	    	Its name is <h2 class="inline">{{ current_model }}</h2> and it is beautiful.
+	      </p>
 	    </div>
 	    <div v-else-if="status === 'returned'">
-    	    <p class="p-custom">
-	        The currently loaded model is {{ current_model }}.
-	    </p>
+	      <p class="p-custom">
+	    	{{ message }}
+	      </p>
+    	      <p class="p-custom-inline">
+	        The currently loaded model is <h2 class="inline">{{ current_model }}</h2>. Click to simulate.
+	      </p>
 	    </div>
 	    <div v-else>
-	    <p class="p-custom">
+	      <p class="p-custom">
+	    	{{ message }}
+	      </p>
+	      <p class="p-custom">
 	        Alternatively, choose a model from the <router-link to="/downloads" v-slot="{ href, route, navigate, isActive, isExactActive }"> <NavLink :active="isActive" :href="href" @click="navigate">Downloads page</NavLink></router-link>.
-	    </p>
+	      </p>
 	    </div>
 
         </div>
@@ -79,20 +88,23 @@ export default {
     },
     async clear() {
       try {
-         await axios.post('/clear');
 	 this.status = '';
+	 this.message = '';
+	 await axios.post('/clear');
 	 }
       catch(err) {
-         this.message = err.response.data.error;	 
+         this.message = err.response.data.error;
+	 this.status = '';
+	 this.message = '';
 	 }
      },
     async simulate() {
       try {
          await axios.post('/simulate');
-	 this.message = "SIMULATE AWAY!! Just kidding, this is not implemented yet."
+	 this.message = "SIMULATE AWAY!! Just kidding, this is not implemented yet.";
 	 }
       catch(err) {
-         this.message = err.response.data.error;	 
+         this.message = err.response.data.error;
 	 }
     },
     async onSubmit(){
@@ -100,12 +112,14 @@ export default {
       formData.append('file', this.file);
       try {
         await axios.post('/upload',formData);
-	this.message = "Uploaded, man, you're rad! Its name is " + this.file.name + " and it is beautiful.";
+	this.message = "File uploaded, man, you're rad!"
 	this.status = 'uploaded';
+	this.current_model = this.file.name;
       }
       catch(err){
 	this.message = err.response.data.error;
-      }
+	this.status = '';
+	}
     },
     async getFilename() {
       try {
@@ -125,6 +139,16 @@ export default {
 <style scoped>
     .p-custom {
 	color: black;
+    }
+
+    .p-custom-inline {
+	display: inline;
+	padding-left: 7px;
+    }
+
+    h2.inline {
+    	display: inline;
+	padding: 0 10px 0 10px;
     }
 
     form {

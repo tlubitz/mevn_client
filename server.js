@@ -10,7 +10,7 @@ var fs = require('fs');
 var spawn = require('child_process').spawn;
 if (typeof localStorage === 'undefined' || localStorage === null) {
     var LocalStorage = require('node-localstorage').LocalStorage;
-    var localStorage = new LocalStorage('./scratch')
+    var localStorage = new LocalStorage('./scratch');
 }
 
 const app = express();
@@ -54,28 +54,24 @@ var upload = multer({
 app.post('/simulate', (req, res) => {
     // get file
     console.log('SIMULATE AWAY!!');
-    console.log(localStorage.getItem('rba_file_path'));
-
     let zip_path = localStorage.getItem('rba_file_path');
-    let dir_path = zip_path.slice(0, zip_path.length-4);
+    let dir_path = zip_path.slice(8, zip_path.length-4);
 
     try {
 	fs.readFile(zip_path, function(err, data) {
 	    if (err) throw err;
-		
 	    var zip = new JSZip();
 	    zip.loadAsync(data).then(function(contents) {
+		let date_obj = new Date();
+		let date = date_obj.getFullYear() + '_' + date_obj.getMonth() + '_' + date_obj.getDay() + '_' + date_obj.getHours() + '_' + date_obj.getMinutes() + '_' + date_obj.getSeconds();
+		let unzipped_path = './scratch/' + dir_path  + '_' + date;
+		var currentStorage = new LocalStorage(unzipped_path);
 		Object.keys(contents.files).forEach(function(filename) {
-
-		    console.log(filename);
 		    zip.file(filename).async('nodebuffer').then(function(content) {
-			//console.log(content);
-			//var dest = '/' + dir_path + '/' + filename;
-			var dest =  'scratch/' + filename;
-			//var dest = filename;
-			//console.log(dest);
+
+			var dest = unzipped_path + '/' + filename;
+			localStorage.setItem('unzipped_path', unzipped_path);
 			fs.writeFileSync(dest, content);
-			
 		    });
 		});
 	    });
@@ -85,54 +81,7 @@ app.post('/simulate', (req, res) => {
 	console.log(err);
     }
     
-
-    /*fs.readFile(zip_path, function(err, data) {
-	JSZip.loadAsync(data).then(function(zip) {
-
-	
-    
-	    //console.log(data); // initial buffer of zip file
-	    //console.log(zip);  // single zip files
-	    
-	    //console.log(zip.files);
-	    for (const p in zip.files) {
-		//console.log(zip.files[p]);
-		//console.log(zip.files[p].name);
-		let dir_path = zip_path.slice(0, zip_path.length-4) + '/' + zip.files[p].name;
-		console.log(dir_path);
-		console.log(zip.files[p])
-		    
-		// write the contents of the buffer, from position 0 to the end, to the file descriptor returned in opening our file
-		fs.writeFile(dir_path, zip.files[p], function(err) {
-		    
-		    if (err) throw 'error writing file: ' + err;
-		    fs.close(fd, function() {
-			console.log('wrote the file successfully');
-		    });
-		});
-		
-		//console.log(zip.files[p]);
-		//console.log('2');
-	    }
-	    // send the data to the python wrapper
-	    /*var pythonProcess = spawn('python', ["static/files/python/rba_wrapper.py", ]);
-	    pythonProcess.stdout.on('data', function(data) {
-		var pp = data.toString('utf8');
-		console.log(pp);
-	    });
-	})
-	if (err) {
-	    console.log('Cannot load file:', err);
-	}
-    })*/
-    
-
-    
     /*
-      JSZip.loadAsync(data).then(function(zip) {
-      //for (const p in zip.files) {
-      //console.log(zip.files[p]);
-      //}
       // send the data to the python wrapper
       var pythonProcess = spawn('python', ["static/files/python/rba_wrapper.py", ]);
       pythonProcess.stdout.on('data', function(data) {
@@ -146,7 +95,9 @@ app.post('/simulate', (req, res) => {
 });
 
 app.post('/chooseModel', (req, res) => {
-    localStorage.setItem('rba_file_path', req.body.name)
+    let rbn = req.body.name;
+    localStorage.setItem('rba_file_path', rbn);
+    localStorage.setItem('rba_file_name', rbn.slice(8, rbn.length));
     res.send();
 });
 
@@ -157,15 +108,15 @@ app.post('/clear', (req, res) => {
 });
 
 app.get('/getFilename', (req, res) => {
-    var path = localStorage.getItem('rba_file_path');
-    var filename = path.slice(8, path.length-4);
-    res.send(filename);
+    var name = localStorage.getItem('rba_file_name');
+    res.send(name);
 });
 
 // process the zip file we receive
 app.post('/upload', upload.single('file'), (req, res) => {
     fs.readFile(req.file.path, function(err, data) {
-	localStorage.setItem('rba_file_path', req.file.path)
+	localStorage.setItem('rba_file_path', req.file.path);
+	localStorage.setItem('rba_file_name', req.file.originalname);
 	if (err) throw err;
     })
     res.json({ file: req.file });
