@@ -29,7 +29,15 @@ export default {
     return {
       msg: 'Documentation',
     }
-  }
+  },
+  mounted() {
+    let dd = document.querySelector('#documentation');
+    dd.style.color = 'red';
+  },
+  destroyed() {
+    let dd = document.querySelector('#documentation');
+    dd.style.color = 'rgba(0,0,0,0.4)';
+  },
 }
 </script>
 

@@ -47,7 +47,16 @@ export default {
     return {
       msg: 'Contact',
     }
-  }
+  },
+  mounted() {
+    let dd = document.querySelector('#contact');
+    dd.style.color = 'red';
+  },
+  destroyed() {
+    let dd = document.querySelector('#contact');
+    dd.style.color = 'rgba(0,0,0,0.4)';
+  },
+
 }
 </script>
 

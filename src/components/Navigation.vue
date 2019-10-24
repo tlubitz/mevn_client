@@ -5,7 +5,7 @@
         <router-link to="/">
           <img id="nav-logo" src="/static/images/logo.png"></img>
         </router-link>
-        <router-link v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`" :alt="`${routes.text}`">{{ routes.text }}</router-link>
+        <router-link :id="routes.short" v-for="routes in links" v-bind:key="routes.id" :to="`${routes.page}`" :alt="`${routes.text}`">{{ routes.text }}</router-link>
       </div>
     </nav>
 
@@ -21,27 +21,32 @@ export default {
 	    {
 	      id: 0,
 	      text: 'GETTING STARTED',
-	      page:'/getting_started'
+	      page:'/getting_started',
+	      short: 'gettingstarted'
 	    },
 	    {
 	      id: 1,
 	      text: 'ONLINE SIMULATOR',
-	      page:'/rba_new'
+	      page:'/rba_new',
+	      short: 'onlinesimulator'
 	    },
 	    {
 	      id: 2,
 	      text: 'DOCUMENTATION',
-	      page:'/documentation'
+	      page:'/documentation',
+	      short: 'documentation'
 	    },
 	    {
 	      id: 3,
 	      text: 'DOWNLOADS',
-	      page:'/downloads'
+	      page:'/downloads',
+	      short: 'downloads'
 	    },
 	    {
 	      id: 4,
 	      text: 'CONTACT',
-	      page:'/contact'
+	      page:'/contact',
+	      short: 'contact'
 	    }
 	 ]
       }
@@ -119,7 +124,5 @@ div.highlightTextIn a:before
     transform: scale(1.2);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 } 
-
-
 
 </style>

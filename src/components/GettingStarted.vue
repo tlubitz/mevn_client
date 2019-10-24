@@ -21,7 +21,15 @@ export default {
     return {
       msg: 'Getting Started'
     }
-  }
+  },
+  mounted() {
+    let dd = document.querySelector('#gettingstarted');
+    dd.style.color = 'red';
+  },
+  destroyed() {
+    let dd = document.querySelector('#gettingstarted');
+    dd.style.color = 'rgba(0,0,0,0.4)';
+  },
 }
 </script>
 

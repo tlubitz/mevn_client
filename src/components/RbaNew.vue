@@ -64,8 +64,14 @@ export default {
       }
     catch(err) {
       console.log('ERROR: ',err);
-    }
+      }
+    let dd = document.querySelector('#onlinesimulator');
+    dd.style.color = 'red';
   },
+  destroyed() {
+    let dd = document.querySelector('#onlinesimulator');
+    dd.style.color = 'rgba(0,0,0,0.4)';
+  },		   
   methods: {
     onSelect(){
       const file = this.$refs.file.files[0];
@@ -122,7 +128,7 @@ export default {
     }
 
     form {
-    padding-left: 7px;
+        padding-left: 7px;
     }
     
     .cover-header {
@@ -140,5 +146,5 @@ export default {
     input[type=button] {
        color:blue;
     }
-    
+
 </style>
