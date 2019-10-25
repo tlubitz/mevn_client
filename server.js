@@ -11,6 +11,7 @@ var spawn = require('child_process').spawn;
 if (typeof localStorage === 'undefined' || localStorage === null) {
     var LocalStorage = require('node-localstorage').LocalStorage;
     var localStorage = new LocalStorage('./scratch');
+    var currentStorage = require('node-localstorage').LocalStorage;
 }
 
 const app = express();
@@ -51,48 +52,48 @@ var upload = multer({
     }
 })
 
-app.post('/simulate', (req, res) => {
+app.post('/unzip_files', (req, res) => {
     // get file
-    console.log('SIMULATE AWAY!!');
+    console.log('UNZIP AWAY!');
     let zip_path = localStorage.getItem('rba_file_path');
-    let dir_path = zip_path.slice(8, zip_path.length-4);
+    let unzipped_path = currentStorage.getItem('unzipped_path');
+    var dest = unzipped_path + '/' + localStorage.getItem('rba_file_name');
 
     try {
 	fs.readFile(zip_path, function(err, data) {
 	    if (err) throw err;
 	    var zip = new JSZip();
 	    zip.loadAsync(data).then(function(contents) {
-		let date_obj = new Date();
-		let date = date_obj.getFullYear() + '_' + date_obj.getMonth() + '_' + date_obj.getDay() + '_' + date_obj.getHours() + '_' + date_obj.getMinutes() + '_' + date_obj.getSeconds();
-		let unzipped_path = './scratch/' + dir_path  + '_' + date;
-		var currentStorage = new LocalStorage(unzipped_path);
 		Object.keys(contents.files).forEach(function(filename) {
 		    zip.file(filename).async('nodebuffer').then(function(content) {
-
-			var dest = unzipped_path + '/' + filename;
-			localStorage.setItem('unzipped_path', unzipped_path);
 			fs.writeFileSync(dest, content);
 		    });
 		});
+		
 	    });
 	});
     }
     catch(err) {
 	console.log(err);
     }
-    
-    /*
-      // send the data to the python wrapper
-      var pythonProcess = spawn('python', ["static/files/python/rba_wrapper.py", ]);
-      pythonProcess.stdout.on('data', function(data) {
-      var pp = data.toString('utf8');
-      console.log(pp);
-      });
-      })
-    */
     res.send();
 
 });
+
+app.post('/simulate', (req, res) => {
+    console.log('SIMULATE AWAY!!');
+
+
+    let path = currentStorage.getItem('unzipped_path');
+    // send the data to the python wrapper
+    var pythonProcess = spawn('python', ["static/files/python/rba_wrapper.py", path]);
+    pythonProcess.stdout.on('data', function(data) {
+	var pp = data.toString('utf8');
+	console.log(pp);
+    });
+    
+    res.send();
+})
 
 app.post('/chooseModel', (req, res) => {
     let rbn = req.body.name;
@@ -104,6 +105,12 @@ app.post('/chooseModel', (req, res) => {
 
 app.post('/clear', (req, res) => {
     localStorage.clear();
+    try {
+	currentStorage.clear();
+    }
+    catch(err) {
+	console.log('currentStorage is not initialised yet. No clearing required.')
+    }
     res.send();
 });
 
@@ -119,6 +126,16 @@ app.post('/upload', upload.single('file'), (req, res) => {
 	localStorage.setItem('rba_file_name', req.file.originalname);
 	if (err) throw err;
     })
+    // also open the current storage directory for the
+    // soon to be unzipped files
+    let zip_path = req.file.path;
+    let dir_path = zip_path.slice(8, zip_path.length-4);
+    let date_obj = new Date();
+    let date = date_obj.getFullYear() + '_' + date_obj.getMonth() + '_' + date_obj.getDay() + '_' + date_obj.getHours() + '_' + date_obj.getMinutes() + '_' + date_obj.getSeconds();
+    let unzipped_path = './scratch/' + dir_path  + '_' + date;
+    currentStorage = new LocalStorage(unzipped_path);
+    var dest = unzipped_path + '/' + req.file.originalname;
+    currentStorage.setItem('unzipped_path', unzipped_path);
     res.json({ file: req.file });
 });
 

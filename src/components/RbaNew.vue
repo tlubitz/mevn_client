@@ -88,24 +88,38 @@ export default {
     },
     async clear() {
       try {
-	 this.status = '';
+      	 this.status = '';
 	 this.message = '';
 	 await axios.post('/clear');
 	 }
       catch(err) {
-         this.message = err.response.data.error;
+         this.message = err;
 	 this.status = '';
 	 this.message = '';
 	 }
      },
     async simulate() {
       try {
-         await axios.post('/simulate');
-	 this.message = "SIMULATE AWAY!! Just kidding, this is not implemented yet.";
-	 }
+	 axios.post('/unzip_files')
+		.then(function(response) {
+		    console.log('And now, we simulate!');
+
+		    axios.post('/simulate')
+		      .then(function(response) {
+		        console.log('Simulated, bros');
+			//window.location.href = '/#/rba_new';
+		      })
+		      .catch(function(error) {
+		        console.log(err);
+		      })
+		    })
+		.catch(function(error) {
+		    console.log(err);
+		})
+	}
       catch(err) {
-         this.message = err.response.data.error;
-	 }
+         this.message = err;
+	}
     },
     async onSubmit(){
       const formData = new FormData();
@@ -125,7 +139,9 @@ export default {
       try {
 	   axios.get('/getFilename').then(data => {
 	   	this.current_model = data.data;
-		this.status = 'returned';
+		if (this.current_model != '') {
+		   this.status = 'returned';
+		}
 	   })
 	   }
       catch(err) {
